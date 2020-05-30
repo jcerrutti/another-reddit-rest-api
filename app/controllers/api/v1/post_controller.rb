@@ -1,8 +1,9 @@
-class PostController < ApplicationController
-  def get_posts
+class Api::V1::PostController < ApplicationController
+  # Get Posts
+  def index
     subreddit = params["subreddit"] ? params["subreddit"] : DEFAULT_SUBREDDIT
     data = fetch_posts(subreddit)
-    @posts = format_posts(data)
+    render json: format_posts(data)
   end
 
   def fetch_posts(subreddit)

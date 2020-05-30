@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  get 'posts', to: 'post#get_posts'
+  namespace :api do
+    namespace :v1 do
+      resources :post
+    end
+  end
 end
