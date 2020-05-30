@@ -1,4 +1,4 @@
-class Api::V1::PostController < ApplicationController
+class Api::V1::PostsController < ApplicationController
   # Get Posts
   def index
     subreddit = params["subreddit"] ? params["subreddit"] : DEFAULT_SUBREDDIT
