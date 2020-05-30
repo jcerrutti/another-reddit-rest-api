@@ -1,5 +1,9 @@
 # README
 
+Demo on Heroku
+https://whispering-castle-81716.herokuapp.com/api/v1/post
+https://whispering-castle-81716.herokuapp.com/api/v1/post?subreddit=javascript
+
 ### Routes
 
 - GET /posts
